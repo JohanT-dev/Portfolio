@@ -1,0 +1,109 @@
+/* Paleta principal */
+:root {
+  --azul-marino: #0a2342;
+  --azul-degradado: linear-gradient(90deg, #0a2342 0%, #1c4daf 100%);
+  --complementario-1: #f7b801;
+  --complementario-2: #21e6c1;
+  --complementario-3: #ff6363;
+  --blanco: #fff;
+  --gris-claro: #f8f9fa;
+}
+
+body {
+  background: var(--gris-claro);
+  color: var(--azul-marino);
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+}
+
+.navbar {
+  background: var(--azul-degradado) !important;
+  border-radius: 0 0 1.5rem 1.5rem;
+}
+
+.navbar-brand {
+  letter-spacing: 2px;
+}
+
+.nav-link {
+  color: var(--blanco) !important;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link.active, .nav-link:focus, .nav-link:hover {
+  color: var(--complementario-1) !important;
+}
+
+.nav-link.active::after {
+  content: '';
+  display: block;
+  height: 4px;
+  width: 100%;
+  background: linear-gradient(90deg, var(--complementario-1), var(--complementario-2), var(--complementario-3));
+  border-radius: 2px;
+  margin-top: 4px;
+  transition: background 0.4s;
+}
+
+section {
+  scroll-margin-top: 90px;
+}
+
+.timeline {
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+.timeline li {
+  margin-bottom: 2rem;
+  padding-left: 2rem;
+  border-left: 4px solid var(--complementario-2);
+  position: relative;
+}
+.timeline li::before {
+  content: '';
+  position: absolute;
+  left: -10px;
+  top: 0.5rem;
+  width: 16px;
+  height: 16px;
+  background: var(--complementario-1);
+  border-radius: 50%;
+  border: 2px solid var(--azul-marino);
+}
+
+footer.footer {
+  background: linear-gradient(90deg, var(--azul-marino), var(--complementario-2));
+  box-shadow: 0 -4px 24px 0 rgba(10,35,66,0.2);
+}
+
+footer .fs-5 {
+  color: var(--complementario-1);
+}
+
+footer a {
+  transition: color 0.3s;
+}
+footer a:hover {
+  color: var(--complementario-3) !important;
+}
+
+.aparecer {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.8s cubic-bezier(0.4,0,0.2,1), transform 0.8s cubic-bezier(0.4,0,0.2,1);
+}
+.aparecer.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Para animar los títulos y tarjetas individualmente */
+.fade-in {
+  opacity: 0;
+  transition: opacity 1s cubic-bezier(0.4,0,0.2,1);
+}
+.fade-in.visible {
+  opacity: 1;
+} 

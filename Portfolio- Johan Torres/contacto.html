@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto | Johan Torres</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-lg py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="index.html">Johan Torres</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-sections">
+            <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link active" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Contacto -->
+  <section class="py-5 bg-light aparecer">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-5 fade-in">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-6 fade-in">
+          <form>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer mt-auto py-4 text-white text-center">
+    <div class="container">
+      <p class="mb-1 fw-bold fs-5">&copy; 2024 Johan Torres. Todos los derechos reservados.</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 

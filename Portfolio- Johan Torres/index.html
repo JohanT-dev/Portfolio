@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portafolio | Johan Torres</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-lg py-3">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-3" href="#">Johan Torres</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-sections">
+            <li class="nav-item"><a class="nav-link" href="sobre-mi.html">Sobre mí</a></li>
+            <li class="nav-item"><a class="nav-link" href="portafolio.html">Portafolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="experiencia.html">Experiencia</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="py-5 aparecer">
+    <div class="container">
+      <div class="d-flex justify-content-end mb-3">
+        <a href="sobre-mi.html" class="btn btn-outline-primary btn-sm">Ver más</a>
+      </div>
+      <div class="row align-items-center">
+        <div class="col-md-5 text-center mb-4 mb-md-0 fade-in">
+          <img src="profile.jpg" alt="Johan Torres" class="rounded-circle img-fluid shadow-lg" style="max-width: 250px;">
+        </div>
+        <div class="col-md-7 fade-in">
+          <h2 class="fw-bold mb-3">Sobre mí</h2>
+          <p class="lead">Soy Johan Torres, desarrollador web apasionado por crear soluciones digitales elegantes, funcionales y modernas. Mi enfoque es combinar diseño atractivo con código limpio y eficiente.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portafolio -->
+  <section id="portafolio" class="py-5 bg-light aparecer">
+    <div class="container">
+      <div class="d-flex justify-content-end mb-3">
+        <a href="portafolio.html" class="btn btn-outline-primary btn-sm">Ver más</a>
+      </div>
+      <h2 class="fw-bold text-center mb-5 fade-in">Mi Portafolio</h2>
+      <div class="row g-4">
+        <!-- Ejemplo de proyecto -->
+        <div class="col-md-4 fade-in">
+          <div class="card h-100 shadow-sm">
+            <img src="project1.jpg" class="card-img-top" alt="Proyecto 1">
+            <div class="card-body">
+              <h5 class="card-title">Proyecto 1</h5>
+              <p class="card-text">Descripción breve del proyecto realizado.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Puedes duplicar este bloque para más proyectos -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiencia -->
+  <section id="experiencia" class="py-5 aparecer">
+    <div class="container">
+      <div class="d-flex justify-content-end mb-3">
+        <a href="experiencia.html" class="btn btn-outline-primary btn-sm">Ver más</a>
+      </div>
+      <h2 class="fw-bold text-center mb-5 fade-in">Experiencia</h2>
+      <div class="row justify-content-center">
+        <div class="col-md-8 fade-in">
+          <ul class="timeline">
+            <li>
+              <h5 class="fw-bold">Desarrollador Web - Empresa X</h5>
+              <span class="text-muted">2022 - Presente</span>
+              <p>Responsable de desarrollo frontend y backend en proyectos de alto impacto.</p>
+            </li>
+            <!-- Más experiencias -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contacto (ahora dentro del footer) -->
+  <footer class="footer mt-auto py-4 text-white text-center">
+    <section id="contacto" class="py-5 bg-light aparecer mb-0">
+      <div class="container">
+        <h2 class="fw-bold text-center mb-5 fade-in">Contacto</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-6 fade-in">
+            <form>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" required>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" required>
+              </div>
+              <div class="mb-3">
+                <label for="mensaje" class="form-label">Mensaje</label>
+                <textarea class="form-control" id="mensaje" rows="4" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-100">Enviar</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container mt-4">
+      <p class="mb-1 fw-bold fs-5">&copy; 2024 Johan Torres. Todos los derechos reservados.</p>
+      <div>
+        <a href="#" class="text-white me-3"><i class="bi bi-github"></i></a>
+        <a href="#" class="text-white me-3"><i class="bi bi-linkedin"></i></a>
+        <a href="#" class="text-white"><i class="bi bi-envelope"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
